@@ -1,0 +1,20 @@
+
+
+
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install pyenv
+brew install libusb
+
+# Install Python
+pip install pyusb
+pip install python-escpos
+pip uninstall Pillow  
+pip install --upgrade Pillow  --global-option="build_ext" --global-option="--enable-raqm"
+pip install textwrap
+pip install pandas
+
+
+
+
